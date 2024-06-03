@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
+</p>
+<p align="center">
+    <h1 align="center">FILMFRENZY</h1>
+</p>
+<p align="center">
+		<em>Developed with the software and tools below.</em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
+	<img src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=flat&logo=PostCSS&logoColor=white" alt="PostCSS">
+	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
+	<img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white" alt="ESLint">
+	<img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white" alt="TypeScript">
+	<img src="https://img.shields.io/badge/Prisma-2D3748.svg?style=flat&logo=Prisma&logoColor=white" alt="Prisma">
+	<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+</p>
+<hr>
 
-## Getting Started
+##  Repository Structure
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```sh
+└── FilmFrenzy/
+    ├── README.md
+    ├── app
+    │   ├── (auth)
+    │   │   ├── layout.tsx
+    │   │   ├── login
+    │   │   │   └── page.tsx
+    │   │   └── sign-up
+    │   │       └── page.tsx
+    │   ├── actions.tsx
+    │   ├── api
+    │   │   └── auth
+    │   │       └── [...nextauth]
+    │   │           └── route.ts
+    │   ├── components
+    │   │   ├── GithubSignInButton.tsx
+    │   │   ├── GoogleSignInButton.tsx
+    │   │   ├── MovieButtons.tsx
+    │   │   ├── MovieCard.tsx
+    │   │   ├── MovieVideo.tsx
+    │   │   ├── Navbar.tsx
+    │   │   ├── NextAuthProvider.tsx
+    │   │   ├── RecentlyAdded.tsx
+    │   │   ├── UserNav.tsx
+    │   │   └── VideoPlayerModal.tsx
+    │   ├── favicon.ico
+    │   ├── globals.css
+    │   ├── home
+    │   │   ├── [genre]
+    │   │   │   └── page.tsx
+    │   │   ├── layout.tsx
+    │   │   ├── page.tsx
+    │   │   └── user
+    │   │       └── list
+    │   │           └── page.tsx
+    │   ├── layout.tsx
+    │   ├── page.tsx
+    │   └── utils
+    │       ├── auth.ts
+    │       └── db.ts
+    ├── components
+    │   └── ui
+    │       ├── avatar.tsx
+    │       ├── button.tsx
+    │       ├── dialog.tsx
+    │       ├── dropdown-menu.tsx
+    │       └── input.tsx
+    ├── components.json
+    ├── lib
+    │   └── utils.ts
+    ├── next.config.mjs
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.mjs
+    ├── prisma
+    │   └── schema.prisma
+    ├── public
+    │   ├── avatar.png
+    │   ├── github.svg
+    │   ├── google.svg
+    │   ├── login_background.jpg
+    │   └── logo.svg
+    ├── tailwind.config.ts
+    └── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+###  Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the FilmFrenzy repository:
 
-## Learn More
+```sh
+git clone https://github.com/vamsi4845/FilmFrenzy
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Change to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+cd FilmFrenzy
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install the dependencies:
 
-## Deploy on Vercel
+```sh
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+###  Running FilmFrenzy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Use the following command to run FilmFrenzy:
+
+```sh
+npm run dev
+```
+
+---
