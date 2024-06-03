@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import BackgroundImage from "../../public/login_background.jpg";
-import Logo from "../../public/netflix_logo.svg";
+import Logo from "../../public/logo.svg";
 const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="relative flex h-screen w-screen flex-col bg-black md:items-center md:justify-center md:bg-transparent">
